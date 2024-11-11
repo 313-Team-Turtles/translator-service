@@ -32,3 +32,6 @@ def translate_content(content: str) -> tuple[bool, str]:
     if content == "This is an English message":
         return True, "This is an English message"
     return True, content
+
+def dummy_translate(content: str) -> str:
+    return content
