@@ -3,7 +3,7 @@ from openai import AzureOpenAI
 import os 
 
 client = AzureOpenAI(
-    api_key=os.getenv("AuHF5EUT6eijreYyxDRvaNkh6VfJO5e1ZkYYPcE2PV78WzVj70vdJQQJ99AJACYeBjFXJ3w3AAABACOGES3A"),  
+    api_key=os.getenv("API_KEY"),  
     api_version="2024-02-15-preview",
     azure_endpoint="https://team-turtles-ai.openai.azure.com/"  
 )
