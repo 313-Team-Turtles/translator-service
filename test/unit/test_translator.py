@@ -72,7 +72,7 @@ def test_correct_translation(mocker):
     assert response == (True, "Provide a list of AI tools.")
 
 @patch('src.translator.client.chat.completions.create')
-def test_error_format(mocker):
+def test_empty_response(mocker):
     mocker.return_value.choices = [MagicMock(message=MagicMock(content=""))]
     response = translate_content("Provide a list of AI tools.")
     assert response == (False, "")
